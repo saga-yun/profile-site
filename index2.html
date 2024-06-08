@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="プロフィール">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUNA's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <h1 class="header-left">YUNA's Portfolio</h1>
+    </header>
+    <main>
+        <h1 class="text offs">
+            <span class="effect delay-1">は</span>
+            <span class="effect delay-2">じ</span>
+            <span class="effect delay-3">め</span>
+            <span class="effect delay-4">ま</span>
+            <span class="effect delay-5">し</span>
+            <span class="effect delay-6">て</span>
+        </h1>
+        <div id="profile-container">
+            <!-- jQueryで要素を追加します -->
+        </div>
+        
+        <!-- Profile詳細 -->
+        <details>
+            <summary>勉強歴</summary>
+            <h3>[　知識0の状態から、WEBサイトを作成（HTML/CSS・JavaScript(jQuery)）できるまで　]</h3>
+            <div class="details-wrapper">
+                <div class="details-career">
+                    <h4>2024.3<br>
+                        -Figmaでデザイン-</h4>
+                    <p>WEBサイト作成の興味からデザインを作りたいと思い、本とFigmaをし始める<br>
+                        始めはYouTubeを観ながら使い方を学び、HTML/CSSの本を読み、<br class="text-hidden">
+                        参考デザインの元、色を変えたりしながら複数作成<br class="text-hidden">
+                        Figmaに使い慣れたところでスキンケアサイトのデザインと、<br class="text-hidden">
+                        Figmaでフラワーショップサイトのデザインを作成
+                    </p>
+                </div>
+                <div class="details-career2">
+                    <h4>2024.4<br>
+                        -HTML/CSS-</h4>
+                    <p>学習サイト（Progate）を通してHTML/CSSを学ぶ<br>
+                        後にコーディング学習サイト（Codejump＜入門編〜初級編＞）や、<br class="text-hidden">
+                        Figmaで作成したデザインを模写コーディングしアウトプット
+                    </p>
+                </div>
+                <div class="details-career3">
+                    <h4>2024.5<br>
+                        -JavaScript（jQuery）-</h4>
+                        <p>学習サイト（Progate）を通してJavaScript（jQuery）を学ぶ<br>
+                            過去に作成したWEBサイトにJavaScript（jQuery）で動きをつける<br>
+                            <span>（成果物一覧にあり/ORIGINAL SKIN）</span>
+                        </p>
+                </div>
+            </div>
+        </details>
+          
+
+        <div class="deliverables">
+            <h2 class="text offs">
+                <span class="effect delay-1">成</span>
+                <span class="effect delay-2">果</span>
+                <span class="effect delay-3">物</span>
+                <span class="effect delay-4">一</span>
+                <span class="effect delay-5">覧</span>
+            </h2>
+            <div class="list_of_deliverables">
+                <div class="box">
+                    <div class="box2" onclick="changeVisibility()">ORIGINAL SKIN
+                        <p class="box-text">クリックして確認</p>
+                    </div>
+                </div>
+                
+                <div id="list_of_deliverables2">
+                    <iframe id="test" src="./content/ORIGINAL SKIN/index.html?wmode=transparent"></iframe>
+                    <div id="batsu">×</div>
+                </div>
+            </div>
+        </div>
+
+       
+
+    </main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+* {
+    padding: 0 ;
+    margin: 0;
+}
+html {
+    font-size: 100%;
+    color: #282928;
+}
+img {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+    border: 5px double #282928;
+    
+}
+h3 {
+    padding: 16px 0;
+
+}
+h4 {
+    padding-top: 24px;
+}
+li {
+    list-style: none;
+}
+a {
+    color: #282928;
+    text-decoration: none;
+}
+.effect {
+    font-size: 40px;
+    letter-spacing: 10px;
+    text-shadow: 1px 2px 3px #808080;
+}
+.top-wrapper {
+    padding: 0 14%;
+}
+
+/* ヘッダー部分 */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4%;
+}
+.header-left {
+    font-size: 24px;
+    font-weight: normal;
+    padding-right: 20px;
+    border-bottom: 1px solid #C0C0C0;
+}
+
+/* はじめましての部分 */
+.text {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.text.offs .effect {
+opacity: 0;
+}
+.text.ons .effect {
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+/*遅延の設定*/
+.delay-1 {
+  transition-delay: 0.2s;
+}
+.delay-2 {
+  transition-delay: 0.4s;
+}
+.delay-3 {
+  transition-delay: 0.6s;
+}
+.delay-4 {
+  transition-delay: 0.8s;
+}
+.delay-5 {
+  transition-delay: 1s;
+}
+.delay-6 {
+    transition-delay: 1.2s;
+}
+
+
+
+
+/* 写真・プロフィールの部分 */
+.self-introduction {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.self-introduction-text {
+    padding: 0 50px;
+}
+.self-introduction-text h2 {
+    display: inline-block;
+    padding: 0 16px;
+    margin-bottom: 20px;
+    background-color: #282928;
+    color: #fff;
+}
+.self-introduction-text p {
+    line-height: 30px;
+}
+
+/* プロフィール詳細部分 */
+details {
+    display: inline-block;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+    margin-left: 39%;
+}
+summary {
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 1em 10em 1em 0.5em;
+}  
+details[open] {
+    padding: 0.5em;
+}
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+}
+
+/* プロフィール詳細内部 */
+.details-career {
+    display: flex;
+}
+.details-career p {
+    line-height: 30px;
+    padding: 16px 0 16px 80px;
+}
+.details-career2 {
+    display: flex;
+}  
+.details-career2 p {
+    line-height: 30px;
+    padding: 16px 0 16px 116px;
+}
+.details-career3 {
+    display: flex;
+}
+.details-career3 p {
+    line-height: 30px;
+    padding: 16px 0 16px 30px;
+}
+.details-career3 p span {
+    color: #0F1A45;
+    font-size: 12px;
+}
+details {
+    cursor: pointer;
+    animation: 0.5s;
+}
+details:hover {
+    color: #000;
+}
+
+/* ポートフォリオの部分 */
+#test {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: #fff;
+}
+#list_of_deliverables2 {
+    width: 0%;
+    height: 0%;
+    background: rgb(0 0 0 / 80%);
+    position: absolute;
+    /* top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
+    margin: auto;
+    z-index: 100;
+    opacity: 0;
+}
+#batsu {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0;
+}
+.box {
+    display: inline-block;
+    cursor: pointer;
+    padding: 1em 3em;
+    margin-left: 39%;
+
+}
+.box2 {
+    letter-spacing: 3px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+.box-text {
+    font-weight: normal;
+    font-size: 16px;
+}
+/* .boxをホバーした時 */
+.box:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+/* ここからレスポンシブ */
+
+@media (max-width:599px) {
+
+    /* 画像とプロフィールの横並び解除 */
+    .self-introduction {
+        display: block;
+    }
+    .self-introduction img {
+        margin-left: -15px;
+    }
+
+    /* プロフィールを非表示 */
+    .self-introduction-text {
+        display: none;
+    }
+    
+    /* 矢印のプロフィール欄 */
+    details {
+        margin:0;
+    }
+    summary {
+        padding: 1em 3em;
+    }
+    .details-career {
+        display: block;
+    }
+    .details-career p {
+        padding: 0;
+    }
+    .details-career2 {
+        display: block;
+    }
+    .details-career2 p {
+        padding: 0;
+    }
+    .details-career3 {
+        display: block;
+    }
+    .details-career3 p {
+        padding: 0;
+    }
+
+    /* 成果物一覧部分 */
+    .deliverables h2 {
+        margin: 30px;
+    }
+    .box {
+        padding: 0;
+        margin:  0 75px 10px 75px;
+    }
+
+    /* バツボタン */
+    #batsu {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: #282928;
+    }
+}

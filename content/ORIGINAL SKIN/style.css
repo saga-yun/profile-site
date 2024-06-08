@@ -1,0 +1,336 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 100%;
+    color: #2b2b2b;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #2b2b2b;
+}
+
+/* ヘッダー部分 */
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+#header-nav ul {
+    display: flex;
+}
+
+.header-list-item {
+    padding: 16px 32px;
+}
+nav ul li a:hover {
+    opacity: 0.7;
+}
+
+/* トップにある２枚の画像 */
+.top-image-blok {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 8px 0 0 0 ; */
+}
+.top-image-blok h2 {
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    padding-top: 80px;
+}
+.left-top-image {
+    display: none;
+}
+
+/*アニメーション*/
+.text.offs .effect {
+    opacity: 0;
+  }
+  .text.ons .effect {
+    opacity: 1;
+    transition-duration: 1s;
+  }
+  
+  /*遅延の設定*/
+  .delay-1 {
+    transition-delay: 0.2s;
+  }
+  .delay-2 {
+    transition-delay: 0.4s;
+  }
+  .delay-3 {
+    transition-delay: 0.6s;
+  }
+  .delay-4 {
+    transition-delay: 0.8s;
+  }
+  .delay-5 {
+    transition-delay: 1s;
+  }
+  .delay-6 {
+    transition-delay: 1.2s;
+  }
+  .delay-7 {
+    transition-delay: 1.4s;
+  }
+  .delay-8 {
+    transition-delay: 1.6s;
+  }
+  .delay-9 {
+    transition-delay: 1.8s;
+  }
+  .delay-10 {
+    transition-delay: 2s;
+  }
+  .delay-11 {
+    transition-delay: 2.2s;
+  }
+  .delay-12 {
+    transition-delay: 2.4s;
+  }
+  .delay-13 {
+    transition-delay: 2.6s;
+  }
+  .delay-14 {
+    transition-delay: 2.8s;
+  }
+  .delay-15 {
+    transition-delay: 3s;
+  }
+  .delay-16 {
+    transition-delay: 3.2s;
+  }
+
+/* コンセプト部分 */
+#concept {
+    text-align: center;
+    margin: 64px 0;
+}
+#concept h2 {
+    font-size: 32px;
+    padding-bottom: 24px;
+    letter-spacing: 3px;
+}
+#concept p {
+    line-height: 24px;
+}
+
+/* メインコンテンツ（ラインナップ）部分 */
+.prouduct-lineup-content {
+    margin: 128px 0;
+    position: relative;
+    top: 0;
+    transition: all.3s;
+}
+.prouduct-lineup-content:hover {
+    top: -3x;
+    box-shadow: 0 8px 12px rgb(0, 0, 0, 0.5); 
+    
+}
+
+#main-content h2 {
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 3px;
+    border-top: 1px solid #949593;
+    border-bottom: 1px solid #949593;
+}
+#main-content img {
+    max-width: 400px;
+    max-height: 400px;
+}
+#main-content ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+#main-content h3 {
+    padding: 8px 0;
+    letter-spacing: 3px;
+}
+
+
+/* メインコンテンツ（コンタクトの電話）部分 */
+#contact {
+    background-color: rgb(192, 192, 192, 0.5);
+}
+
+.contact-titile {
+    text-align: center;
+}
+.contact-titile h2 {
+    font-size: 32px;
+    letter-spacing: 3px;
+    border-top: 1px solid #949593;
+    border-bottom: 1px solid #949593;
+}
+.contact-titile p {
+    padding: 24px 0 32px 0;
+}
+.contact-call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #949593;
+    padding-bottom: 32px;
+}
+.contact-icon {
+    text-align: center;
+    padding-left: 40px;
+}
+.contact-icon img {
+    height: 120px;
+}
+.call-number {
+    padding-left: 40px;
+}
+.number {
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+/* メインコンテンツ（コンタクトのメール）部分 */
+.contact-meal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0 40px 0;
+}
+.contact-meal-icon {
+    text-align: center;
+    padding-right: 70px;
+}
+.contact-meal-icon img {
+    height: 120px;
+}
+.contact-button {
+    padding-right: 40px;
+    position: relative;
+    top: 0;
+    transition: all .3s;
+}
+.contact-button p {
+    padding-bottom: 48px;
+}
+.contact-button a:hover {
+    top: -3x;
+    box-shadow: 0 8px 12px rgb(0, 0, 0, 0.5);
+}
+/* お問い合わせボタン部分 */
+.button {
+    text-decoration: none;
+    padding: 24px 48px;
+    background-color: #C0C0C0;
+    border: 1px solid #949593;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* フッター部分 */
+footer {
+    text-align: center;
+    font-size: 10px;
+    padding: 16px 0; 
+}
+
+
+
+
+/* ここからレスポンシブ */
+@media (max-width:599px) {
+
+    /* ヘッダー部分 */
+    #header {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        width: 100%;
+        background-color: rgb(255, 255, 255, 0.5);
+    }
+    #header-logo {
+        font-size: 24px;
+        line-height: 50px;
+    }
+    #header-nav {
+        display: none;
+    }
+    
+    /* 画像部分 */
+    .top-image-blok {
+        display: block;
+    }
+    .left-top-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* 画像の非表示 */
+    .right-top-image {
+        visibility: hidden;
+    }
+
+    /* jsテキストテキスト部分 */
+    .top-image-blok h2 {
+        writing-mode: horizontal-tb;
+        padding: 20px 10px 0 10px;
+        text-align: center;
+    }
+
+    /* コンセプト部分 */
+    #concept {
+        margin-top: -640px;
+        padding: 0 10px;
+    }
+
+    #main-content ul {
+        display: block;
+
+    }
+
+
+    /* コンタクトの電話部分 */
+    .number {
+        font-size: 24px;
+    }
+    .contact-call {
+        padding: 0 20px 20px 20px;
+    }
+    .contact-icon {
+        padding-left: 0;
+    }
+    /* コンタクトのメール部分 */
+    .contact-meal {
+        padding: 24px 20px;
+    }
+    .contact-button {
+        padding-right: 10px;
+    }
+    .button {
+        padding: 12px 24px;
+        
+    }
+    .contact-meal-icon {
+        padding: 0 15px;
+    }
+}
+
